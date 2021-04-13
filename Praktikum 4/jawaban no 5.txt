@@ -1,0 +1,48 @@
+Kegiatan 1
+
+5. Setelah script bisa berjalan dengan baik, jawablah pertanyaan berikut ini:
+a. Apakah kegunaan dari function fopen()? Dan jelaskan maksud dari parameter yang ada di dalam function fopen() tersebut!
+
+Jawab: function fopen digunakan untuk operasi file, salah satu fungsinya adalah membaca file, parameter dalam function fopen() berisi 2 parameter pertama adalah nama file yang akan dibaca, yang kedua adalah mode yang digunakan, pada contoh sebelumnya adalah r yaitu read berarti membaca
+
+b. Apa kegunaan dari function die()?
+
+Jawab: function die() berfungsi untuk menampilkan pesan yang diinginkan saat file yang dipanggil tidak ditemukan
+
+c. Apa kegunaan dari function fread()? Jelaskan maksud maksud dari parameter yang ada di dalam function fread() tersebut!
+
+Jawab: untuk membaca isi dari sebuah file, terdapat 2 parameter, yang pertama adalah hasil kembalian dari fungsi, parameter yang kedua berisi ukuran file yang akan dibaca, parameter kedua kita isi dengan nama filenya agar isi filenya terbaca semua.
+
+d. Apa kegunaan dari function fclose()? Bagaimana jika tidak menggunakan function ini setelah operasi file selesai?
+
+Jawab: function fclose() adalah untuk menutup file dan menghapus dari memori, jika tidak menggunakan function ini setelah operasi file selesai maka file tidak tertutup dan tidak bisa melanjutkan fungsi selanjutnya, serta membebani memori karena file sebelumnya tidak terhapus.
+
+Kegiatan 2
+
+2. Jalankan script di atas, dan amati hasilnya! Apakah output yang dihasilkan sama dengan script bacafile.php? Jika sama, apa kesimpulannya? Dan jelaskan apa perbedaan cara kerja dari kedua
+script tersebut!
+
+Jawab : Hasilnya Sama, menggunakan fungsi yang berbeda, Perbedaanya terletak pada fungsi yang digunakan, pada bacafile.php kita menmapilkan keseluruhan isi dengan function fread() pada bacafile2.php kita menggunakan fungsi pembaca perbaris, dan menggunakan fungsi fgets() untuk membaca file dan feof() untuk mengetahui baris terakhir dari file yang dibaca
+
+3. Jelaskan kegunaan dari function berikut ini:
+a. feof()
+
+Jawab: Untuk mengetahui akhir baris dalam file yang dibaca
+
+b. fgets()
+
+Jawab: untuk membaca file dengan cara perbaris
+
+Kegiatan 3
+
+2. Jalankan script di atas, kemudian amati perubahan yang ada di dalam file myfile.txt!
+
+jawab : Bertambah kata yang diinput
+
+3. Apa kegunaan dari function fwrite()?
+
+jawab : Untuk menambah isi dari sebuah file
+
+4. Apa yang terjadi jika perintah fopen($namaFile, "a") diganti dengan fopen($namaFile, "w")?
+
+jawab : file diganti menjadi inputan yang baru Bukan Ditambah
